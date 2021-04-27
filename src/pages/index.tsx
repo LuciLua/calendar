@@ -5,8 +5,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './_app';
 import { GetStaticProps } from 'next';
+import format from 'date-fns/format';
+import ptBR from 'date-fns/locale/pt-BR';
 
-
+const currentDate = format(new Date(), 'EEEEEE, d MMMM', {
+  locale: ptBR,
+})
 
 type Usuarios = {
   id: number;
@@ -25,7 +29,10 @@ export default function Home() {
    <Head>
       <title>Calendário</title>
    </Head>
-    <h1>Hello, world!</h1>
+    <div className={styles.header}>
+      <h1>Calendário!</h1>
+      <span>{currentDate}</span>
+    </div>
    </div>
   )
 }
