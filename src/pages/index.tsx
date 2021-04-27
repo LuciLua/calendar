@@ -23,7 +23,7 @@ export default function Home() {
   return (
    <div>
    <Head>
-      <title>Hello</title>
+      <title>Calendário</title>
    </Head>
     <h1>Hello, world!</h1>
    </div>
