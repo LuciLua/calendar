@@ -14,13 +14,25 @@ const {
              <div className={!isDisplay ? styles.listagemNone : styles.listagem}>
       <h5>Listagem</h5>
       <h6>Maio</h6>
-      <p>o Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat saepe accusantium, officia sed nulla magni aut reiciendis in temporibus aliquam pariatur alias suscipit dolore sapiente blanditiis quas fuga magnam!</p>
-      <p>o Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat saepe accusantium, officia sed nulla magni aut reiciendis in temporibus aliquam pariatur alias suscipit dolore sapiente blanditiis quas fuga magnam!</p>
-      <p>o Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat saepe accusantium, officia sed nulla magni aut reiciendis in temporibus aliquam pariatur alias suscipit dolore sapiente blanditiis quas fuga magnam!</p>
+      <p>o<strong>
+          00:00 às 00:00 | Dia: 03
+        </strong> <br />Curso JavaScript - Udemy</p>
+        <p>o<strong>
+          00:00 às 00:00 | Dia: 03
+        </strong> <br />Curso JavaScript - Udemy</p>
+        <p>o<strong>
+          00:00 às 00:00 | Dia: 03
+        </strong> <br />Curso JavaScript - Udemy</p>
       <h6>Junho</h6>
-      <p>o Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat saepe accusantium, officia sed nulla magni aut reiciendis in temporibus aliquam pariatur alias suscipit dolore sapiente blanditiis quas fuga magnam!</p>
-      <p>o Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat saepe accusantium, officia sed nulla magni aut reiciendis in temporibus aliquam pariatur alias suscipit dolore sapiente blanditiis quas fuga magnam!</p>
-      <p>o Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat saepe accusantium, officia sed nulla magni aut reiciendis in temporibus aliquam pariatur alias suscipit dolore sapiente blanditiis quas fuga magnam!</p>
+      <p>o<strong>
+          00:00 às 00:00 | Dia: 03
+        </strong> <br />Curso JavaScript - Udemy</p>
+        <p>o<strong>
+          00:00 às 00:00 | Dia: 03
+        </strong> <br />Curso JavaScript - Udemy</p>
+        <p>o<strong>
+          00:00 às 00:00 | Dia: 03
+        </strong> <br />Curso JavaScript - Udemy</p>
     </div>
             <div className={styles.footerFill}>
                 <ul>
