@@ -44,44 +44,62 @@ export default function Home() {
           <th>Sábado</th>
         </tr>
         <tr className={styles.days}>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>7</td>
+          <td id={styles.d1}></td>
+          <td id={styles.d2}></td>
+          <td id={styles.d3}></td>
+          <td id={styles.d4}></td>
+          <td id={styles.d5}></td>
+          <td id={styles.d6}></td>
+          <td id={styles.d7}>1</td>
         </tr>
         <tr>
-          <td>8</td>
-          <td>9</td>
-          <td>10</td>
-          <td>11</td>
-          <td>12</td>
-          <td>13</td>
-          <td>14</td>
+          <td id={styles.d8}>2</td>
+          <td id={styles.d9}>3</td>
+          <td id={styles.d10}>4</td>
+          <td id={styles.d11}>5</td>
+          <td id={styles.d12}>6</td>
+          <td id={styles.d13}>7</td>
+          <td id={styles.d14}>8</td>
         </tr>
         <tr>
-          <td>15</td>
-          <td>16</td>
-          <td>17</td>
-          <td>18</td>
-          <td>19</td>
-          <td>20</td>
-          <td>21</td>
+          <td id={styles.d15}>9</td>
+          <td id={styles.d16}>10</td>
+          <td id={styles.d17}>11</td>
+          <td id={styles.d18}>12</td>
+          <td id={styles.d19}>13</td>
+          <td id={styles.d20}>14</td>
+          <td id={styles.d21}>15</td>
           </tr>
           <tr>
-          <td>22</td>
-          <td>23</td>
-          <td>24</td>
-          <td>25</td>
-          <td>26</td>
-          <td>27</td>
-          <td>28</td>
+          <td id={styles.d22}>16</td>
+          <td id={styles.d23}>17</td>
+          <td id={styles.d24}>18</td>
+          <td id={styles.d25}>19</td>
+          <td id={styles.d26}>20</td>
+          <td id={styles.d27}>21</td>
+          <td id={styles.d28}>22</td>
+          </tr>
+          <tr>
+          <td id={styles.d29}>23</td>
+          <td id={styles.d30}>24</td>
+          <td id={styles.d31}>25</td>
+          <td id={styles.d32}>26</td>
+          <td id={styles.d33}>27</td>
+          <td id={styles.d34}>28</td>
+          <td id={styles.d35}>29</td>
+          </tr>
+          <tr>
+          <td id={styles.d36}>30</td>
+          <td id={styles.d37}>31</td>
+          <td id={styles.d38}></td>
+          <td id={styles.d39}></td>
+          <td id={styles.d40}></td>
+          <td id={styles.d41}></td>
+          <td id={styles.d42}></td>
           </tr>
       </table>
     </div>
-   </div>
+    </div>
   )
 }
 

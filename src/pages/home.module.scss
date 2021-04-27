@@ -70,12 +70,14 @@
                 cursor: default;
                 user-select: none;
 
+                height: 0.8rem;
+
             }
             td{
                 text-align: center;
                 border: 1px solid rgb(174, 174, 174);
-                width:15vh;
-                height:15vh;
+                width:11vh;
+                height:9vh;
                 position: relative;
 
                 font-family: Lexend, sans-serif;
@@ -99,16 +101,84 @@
 }
 
 
+.listagem{
+    position: absolute;
+    width: 85vh;
+    height: 70vh;
+
+    top: 10%;
+
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.201);
+
+    padding: 3rem 7rem  7rem;
+
+    border-radius: 5px;
+    background: rgb(249, 249, 249);
+
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    h5{
+        font-family: Lexend;
+        font-size: 3rem;
+
+        margin-bottom: 2.5rem;
+        line-height: 7rem;
+
+        border-bottom: rgb(208, 208, 208)1px solid;
+
+    }
+
+    h6{
+        font-family: Lexend;
+        font-size: 1.2em;
+        color: rgb(0, 0, 0);
+        
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    p{
+        font-family: Lexend;
+        font-size: 0.8rem;
+
+        line-height: 1.4rem;
+
+        color: rgb(62, 62, 62);
+
+        margin-bottom: 1.5rem;
+    }
+
+    p::first-letter{
+        border-radius: 100px;
+        width: 1px;
+        height: 1px;
+        padding: 0.4px 1.5px;
+        background: rgb(255, 0, 0);
+
+        font-size: 3px;
+
+        margin-right: 0.5rem;
+
+        color: rgb(255, 0, 0);
+    }
+}
+
 
 //resposive Layout
 
 @media only screen and (max-width: 660px) {
     .calendar{
+        top: 0;
+        left: 0;
+        position: absolute;
         table{
             tr{
                 td{
-                height: 14vh;
-                width: 14vh;
+                height: 7vh;
+                width: 100vh;
                 }
             }
         }
@@ -118,11 +188,14 @@
 
 @media only screen and (max-width: 580px) {
     .calendar{
+        top: 0;
+        left: 0;
+        position: absolute;
         table{
             tr{
                 td{
-                height: 10vh;
-                width: 10vh;
+                height: 6vh;
+                width: 100vh;
                 }
             }
         }
@@ -132,11 +205,14 @@
 
 @media only screen and (max-width: 420px) {
     .calendar{
+        top: 0;
+        left: 0;
+        position: absolute;
         table{
             tr{
                 td{
-                height: 9vh;
-                width: 9vh;
+                height: 5vh;
+                width: 100vh;
                 }
             }
         }
@@ -145,11 +221,14 @@
 
 @media only screen and (max-width: 340px) {
     .calendar{
+        top: 0;
+        left: 0;
+        position: absolute;
         table{
             tr{
                 td{
-                height: 7vh;
-                width: 7vh;
+                height: 5vh;
+                width: 100vh;
                 }
             }
         }

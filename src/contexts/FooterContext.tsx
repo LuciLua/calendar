@@ -1,8 +1,10 @@
-import { createContext, ReactNode, useContext } from 'react';
+import { createContext, ReactNode, useContext, useState } from 'react';
 
 
 type FooterContextData ={
-    
+    toggleList: () => void;
+    isDisplay: boolean;    
+    setListState: (state: boolean) => void;
 }
 
 type FooterContextProviderProps = {
@@ -12,8 +14,22 @@ type FooterContextProviderProps = {
 export const FooterContext =createContext({} as FooterContextData);
 export function FooterContextProvider({ children }: FooterContextProviderProps){
 
+    const [isDisplay, setIsList] = useState(false)
+
+    function toggleList(){
+        setIsList(!isDisplay)
+    }
+
+    function setListState(state: boolean){
+        setIsList(state)
+    }
+
     return(
-        <FooterContext.Provider value={{}}>
+        <FooterContext.Provider value={{
+            toggleList,
+            isDisplay,
+            setListState            
+        }}>
             {children}
         </FooterContext.Provider>
     )
