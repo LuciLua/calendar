@@ -1,0 +1,53 @@
+{
+    "usuarios":[
+        {"id":1,
+        "username": "Luci",
+        "idade": 19,
+        "hobbies":
+            {
+                "hobbie_principal":"programar",
+                "hobbie_secundario":"jogar"
+            }
+        },
+        {"id":2,
+        "username": "João",
+        "idade": 22,
+        "hobbies":
+        {
+            "hobbie_principal":"desenhar",
+            "hobbie_secundario":"estudar"
+        }},
+        {"id":3,
+        "username": "Roberta",
+        "idade": 12,
+        "hobbies":
+        {
+            "hobbie_principal":"ler",
+            "hobbie_secundario":"caminhar"
+        }},
+        {"id":4,
+        "username": "Sara",
+        "idade": 17,
+        "hobbies":
+        {
+            "hobbie_principal":"cozinhar",
+            "hobbie_secundario":"nadar"
+        }},
+        {"id":5,
+        "username": "John",
+        "idade": 25,
+        "hobbies":
+        {
+            "hobbie_principal":"dormir",
+            "hobbie_secundario":"comer"
+        }},
+        {"id":6,
+        "username": "Jane",
+        "idade": 20,
+        "hobbies":
+        {
+            "hobbie_principal":"fotografar",
+            "hobbie_secundario":"meditar"
+        }}
+    ]
+}
