@@ -44,58 +44,58 @@ export default function Home() {
           <th>Sábado</th>
         </tr>
         <tr className={styles.days}>
-          <td id={styles.d1}></td>
-          <td id={styles.d2}></td>
-          <td id={styles.d3}></td>
-          <td id={styles.d4}></td>
-          <td id={styles.d5}></td>
-          <td id={styles.d6}></td>
-          <td id={styles.d7}>1</td>
+          <td id={styles.d1}><input type="checkbox"></input></td>
+          <td id={styles.d2}><input type="checkbox"></input></td>
+          <td id={styles.d3}><input type="checkbox"></input></td>
+          <td id={styles.d4}><input type="checkbox"></input></td>
+          <td id={styles.d5}><input type="checkbox"></input></td>
+          <td id={styles.d6}><input type="checkbox"></input></td>
+          <td id={styles.d7}>1<input type="checkbox"></input></td>
         </tr>
         <tr className={styles.days}>
-          <td id={styles.d8}>2</td>
-          <td id={styles.d9}>3</td>
-          <td id={styles.d10}>4</td>
-          <td id={styles.d11}>5</td>
-          <td id={styles.d12}>6</td>
-          <td id={styles.d13}>7</td>
-          <td id={styles.d14}>8</td>
+          <td id={styles.d8}>2<input type="checkbox"></input></td>
+          <td id={styles.d9}>3<input type="checkbox"></input></td>
+          <td id={styles.d10}>4<input type="checkbox"></input></td>
+          <td id={styles.d11}>5<input type="checkbox"></input></td>
+          <td id={styles.d12}>6<input type="checkbox"></input></td>
+          <td id={styles.d13}>7<input type="checkbox"></input></td>
+          <td id={styles.d14}>8<input type="checkbox"></input></td>
         </tr>
         <tr className={styles.days}>
-          <td id={styles.d15}>9</td>
-          <td id={styles.d16}>10</td>
-          <td id={styles.d17}>11</td>
-          <td id={styles.d18}>12</td>
-          <td id={styles.d19}>13</td>
-          <td id={styles.d20}>14</td>
-          <td id={styles.d21}>15</td>
+          <td id={styles.d15}>9<input type="checkbox"></input></td>
+          <td id={styles.d16}>10<input type="checkbox"></input></td>
+          <td id={styles.d17}>11<input type="checkbox"></input></td>
+          <td id={styles.d18}>12<input type="checkbox"></input></td>
+          <td id={styles.d19}>13<input type="checkbox"></input></td>
+          <td id={styles.d20}>14<input type="checkbox"></input></td>
+          <td id={styles.d21}>15<input type="checkbox"></input></td>
           </tr>
           <tr className={styles.days}>
-          <td id={styles.d22}>16</td>
-          <td id={styles.d23}>17</td>
-          <td id={styles.d24}>18</td>
-          <td id={styles.d25}>19</td>
-          <td id={styles.d26}>20</td>
-          <td id={styles.d27}>21</td>
-          <td id={styles.d28}>22</td>
+          <td id={styles.d22}>16<input type="checkbox"></input></td>
+          <td id={styles.d23}>17<input type="checkbox"></input></td>
+          <td id={styles.d24}>18<input type="checkbox"></input></td>
+          <td id={styles.d25}>19<input type="checkbox"></input></td>
+          <td id={styles.d26}>20<input type="checkbox"></input></td>
+          <td id={styles.d27}>21<input type="checkbox"></input></td>
+          <td id={styles.d28}>22<input type="checkbox"></input></td>
           </tr>
           <tr className={styles.days}>
-          <td id={styles.d29}>23</td>
-          <td id={styles.d30}>24</td>
-          <td id={styles.d31}>25</td>
-          <td id={styles.d32}>26</td>
-          <td id={styles.d33}>27</td>
-          <td id={styles.d34}>28</td>
-          <td id={styles.d35}>29</td>
+          <td id={styles.d29}>23<input type="checkbox"></input></td>
+          <td id={styles.d30}>24<input type="checkbox"></input></td>
+          <td id={styles.d31}>25<input type="checkbox"></input></td>
+          <td id={styles.d32}>26<input type="checkbox"></input></td>
+          <td id={styles.d33}>27<input type="checkbox"></input></td>
+          <td id={styles.d34}>28<input type="checkbox"></input></td>
+          <td id={styles.d35}>29<input type="checkbox"></input></td>
           </tr>
           <tr className={styles.days}>
-          <td id={styles.d36}>30</td>
-          <td id={styles.d37}>31</td>
-          <td id={styles.d38}></td>
-          <td id={styles.d39}></td>
-          <td id={styles.d40}></td>
-          <td id={styles.d41}></td>
-          <td id={styles.d42}></td>
+          <td id={styles.d36}>30<input type="checkbox"></input></td>
+          <td id={styles.d37}>31<input type="checkbox"></input></td>
+          <td id={styles.d38}><input type="checkbox"></input></td>
+          <td id={styles.d39}><input type="checkbox"></input></td>
+          <td id={styles.d40}><input type="checkbox"></input></td>
+          <td id={styles.d41}><input type="checkbox"></input></td>
+          <td id={styles.d42}><input type="checkbox"></input></td>
           </tr>
       </table>
     </div>

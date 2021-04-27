@@ -29,7 +29,7 @@
             }
 
             li{
-                border-left: var(--gray-200) 1px solid;
+                border-left: var(--gray-50) 1px solid;
                 height: 100%;
                 width: 100%;
                 display: flex;
@@ -47,12 +47,20 @@
                     filter: invert(0.5);
                 }
 
-                input{
+                input[type=color]{
                     position: absolute;
                     width: 20%;
                     height: 100%;
                     border: none;
                     opacity: 0%;
+                }
+                
+                input[type=radio]{
+                    position: absolute;
+                    width: 20%;
+                    height: 100%;
+                    border: none;
+                    opacity: 10%;
                 }
 
                 a{
@@ -63,6 +71,9 @@
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
+                    user-select: none;
+                    pointer-events: none;
+
 
                     img{
                         width: 1.5rem;
@@ -70,7 +81,8 @@
                         align-items: center;
                         justify-content: center;
                         transition: 0.4s;
-
+                        user-select: none;
+                        pointer-events: none;
                     }
 
                     span{
@@ -81,6 +93,9 @@
                         font-family: Lexend;
                         font-size: 1.5vh;
                         color: var(--gray-800);
+                        user-select: none;
+                        pointer-events: none;
+
                     }
                 }
             }
@@ -191,6 +206,13 @@
   #resultado{
     background: #151515;
     color: #fff;
+    border-left: var(--gray-50) 1px solid;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     img{
         filter: invert(2);
     }

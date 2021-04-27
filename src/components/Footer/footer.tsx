@@ -39,57 +39,62 @@ const {
     </div>
             <div className={styles.footerFill}>
                 <ul>
-
-                     {!isColor 
+                {!isColor 
                     ?
-                    <li id={styles.resultado} onClick={toggleColor}>
+                    <li>
+                            
+                            <input type="radio" name={styles.cr} id={styles.cp1} onClick={toggleColor}/>
+                            <a href="#">
+                                <img src="ico_add.svg" alt=""/>
+                                <span>Adicionar</span>
+                            </a>
+                         
+                        </li>
+                        :
+                        <li id={styles.resultado}>
+                            <input type="radio" name={styles.cr} id={styles.cp1}onClick={toggleColor}/>
                             <a href="#">
                             <img src="ico_add.svg" alt=""/>
                             <span>Adicionar</span>
                             </a>
                         </li>
-                        :
-                        <li onClick={toggleColor}>
-                            <form action="">
-                            <a href="#">
-                            <img src="ico_add.svg" alt=""/>
-                            <span>Adicionar</span>
-                            <input type="color" name={styles.cores} value="#fff" onSubmit={function(){
-                                let dias = document.getElementById('d7').style.background;
-                                document.getElementById("resultado").style.background = dias['cores'].value;  
-                                return false;
-                          }
-                        }/>
-                            </a>
-                            </form>
-                        </li>}
-                        
-                    
+                        }                   
 
                     <li>
+                    <input type="radio" name={styles.cr} id={styles.cp1}/>
                         <a href="#">
                         <img src="ico_del.svg" alt=""/>
                         <span>Excluir</span>
                         </a>
                     </li>
                     <li>
+                    <input type="radio" name={styles.cr} id={styles.cp1}/>
                         <a href="#">
                         <img src="ico_calendar.svg" alt=""/>
                         <span>Editar</span>
                         </a>
                     </li>
                     <li id={styles.list}>
-                        <a href="#" onClick={toggleList}>
+                    <input type="radio" name={styles.cr} id={styles.cp1} onClick={toggleList}/>
+                        <a>
                         <img src="ico_list.svg" alt=""/>
                         <span>Listar</span>
                         </a>
                     </li>
                     <li>
+                    <input type="color" name={styles.cores} value="#fff" onInput={function(){
+                                let dias = document.querySelector('li').style.background;
+
+                                document.getElementById("resultado").style.background = dias['cores'].value;  
+                               return false;
+                            }
+                        }/>
                         <a href="#">
                         <img src="ico_moon.svg" alt=""/>
                         <span>Tema</span>
                         </a>
                     </li>
+               
                 </ul>
             </div>
         </div>
