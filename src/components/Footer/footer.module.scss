@@ -27,6 +27,17 @@
                 align-items: center;
                 justify-content: center;
 
+                &:hover{
+                    background-color: rgb(240, 240, 240);
+                }
+
+                &:hover > a img{
+                    transition: 0.4s;
+                    position: relative;
+
+                    filter: invert(0.5);
+                }
+
                 a{
                     text-decoration: none;
                     width: 100%;
@@ -41,6 +52,8 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        transition: 0.4s;
+
                     }
 
                     span{
