@@ -5,7 +5,10 @@ export function Footer(){
     
 const {
     toggleList,
-    isDisplay
+    isDisplay,
+
+    toggleColor,
+    isColor
 } = useFooter();
 
     return(
@@ -36,12 +39,33 @@ const {
     </div>
             <div className={styles.footerFill}>
                 <ul>
-                    <li>
-                        <a href="#">
-                        <img src="ico_add.svg" alt=""/>
-                        <span>Adicionar</span>
-                        </a>
-                    </li>
+
+                     {!isColor 
+                    ?
+                    <li id={styles.resultado} onClick={toggleColor}>
+                            <a href="#">
+                            <img src="ico_add.svg" alt=""/>
+                            <span>Adicionar</span>
+                            </a>
+                        </li>
+                        :
+                        <li onClick={toggleColor}>
+                            <form action="">
+                            <a href="#">
+                            <img src="ico_add.svg" alt=""/>
+                            <span>Adicionar</span>
+                            <input type="color" name={styles.cores} value="#fff" onSubmit={function(){
+                                let dias = document.getElementById('d7').style.background;
+                                document.getElementById("resultado").style.background = dias['cores'].value;  
+                                return false;
+                          }
+                        }/>
+                            </a>
+                            </form>
+                        </li>}
+                        
+                    
+
                     <li>
                         <a href="#">
                         <img src="ico_del.svg" alt=""/>

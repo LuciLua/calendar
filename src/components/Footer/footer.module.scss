@@ -47,6 +47,14 @@
                     filter: invert(0.5);
                 }
 
+                input{
+                    position: absolute;
+                    width: 20%;
+                    height: 100%;
+                    border: none;
+                    opacity: 0%;
+                }
+
                 a{
                     text-decoration: none;
                     width: 100%;
@@ -177,3 +185,16 @@
         }
     }
   }
+
+
+
+  #resultado{
+    background: #151515;
+    color: #fff;
+    img{
+        filter: invert(2);
+    }
+    span{
+        color: rgb(223, 223, 223);
+    }
+}
