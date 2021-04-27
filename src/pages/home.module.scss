@@ -1,22 +1,102 @@
 .header{
-    background-color: #3a4257;
+    background-color: #3a42573c;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
 
     box-shadow: 0 3px 13px rgba(0, 0, 0, 0.4);
 
-    height: 10vh;
+    height: 5vh;
+    width: 100%;
 
     font-family: Lexend;
     color: var(--gray-50);
 
-    h1{
-        font-size: 4vh;
-    }
+    top: 0;
 
     span{
         font-size: 1.5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            position: relative;
+            background-color: #fff;
+            width: 4px;
+            height: 4px;
+            border-radius: 60px;
+            margin-left: 7px;
+            margin-right: 7px;
+        }
+    }
+}
+
+.calendar{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: auto;
+
+    table{
+        background-color: var(--gray-100);
+        width: fit-content;
+        height: 80%;
+        border-collapse: collapse;
+        position: relative;
+        object-fit: scale-down;
+
+        tr{
+            background-color: rgb(255, 255, 255);
+            
+            
+            th{
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border: 1px solid rgb(174, 174, 174);
+                font-size: 1.4vh;
+                height: 20px;
+
+                color: rgb(38, 38, 38);
+
+                font-family: Lexend, sans-serif;
+                font-weight: 800;
+
+            }
+            td{
+                text-align: center;
+                border: 1px solid rgb(174, 174, 174);
+                width:15vh;
+                height:10vh;
+                max-height: 10vh;
+                max-width: 15vh;
+                min-height: 10vh;
+                min-width: 5vh;
+                position: relative;
+
+                font-family: Lexend, sans-serif;
+                font-weight: 500;
+
+                color: rgb(0, 0, 0);
+                font-size: 1.5vh;
+            }
+        }
+    }
+}
+
+
+
+//resposive Layout
+
+@media only screen and (max-width: 600px) {
+    .calendar{
+        
+        table{
+            height: 25%;
+        }
     }
 }
