@@ -11,7 +11,7 @@ const {
     return(
         
         <div className={styles.footer}>
-             <div className={!isDisplay ? styles.listagemisActive : styles.listagem}>
+             <div className={!isDisplay ? styles.listagemNone : styles.listagem}>
       <h5>Listagem</h5>
       <h6>Maio</h6>
       <p>o Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat saepe accusantium, officia sed nulla magni aut reiciendis in temporibus aliquam pariatur alias suscipit dolore sapiente blanditiis quas fuga magnam!</p>

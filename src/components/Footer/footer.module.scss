@@ -76,7 +76,7 @@
 
 // clica
 
-.listagemisActive{
+.listagemNone{
     display: none;
 }
 
@@ -156,6 +156,15 @@
         .footerFill{
             ul li a span{                                
                 display: none;
+            }
+        }
+        .listagem{
+            width: 50vh;
+            height: 45vh;
+            padding: 1rem;
+            margin-top: 31.5vh;
+            h5{
+                font-size: 2rem;
             }
         }
     }

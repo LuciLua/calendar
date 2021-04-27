@@ -52,7 +52,7 @@ export default function Home() {
           <td id={styles.d6}></td>
           <td id={styles.d7}>1</td>
         </tr>
-        <tr>
+        <tr className={styles.days}>
           <td id={styles.d8}>2</td>
           <td id={styles.d9}>3</td>
           <td id={styles.d10}>4</td>
@@ -61,7 +61,7 @@ export default function Home() {
           <td id={styles.d13}>7</td>
           <td id={styles.d14}>8</td>
         </tr>
-        <tr>
+        <tr className={styles.days}>
           <td id={styles.d15}>9</td>
           <td id={styles.d16}>10</td>
           <td id={styles.d17}>11</td>
@@ -70,7 +70,7 @@ export default function Home() {
           <td id={styles.d20}>14</td>
           <td id={styles.d21}>15</td>
           </tr>
-          <tr>
+          <tr className={styles.days}>
           <td id={styles.d22}>16</td>
           <td id={styles.d23}>17</td>
           <td id={styles.d24}>18</td>
@@ -79,7 +79,7 @@ export default function Home() {
           <td id={styles.d27}>21</td>
           <td id={styles.d28}>22</td>
           </tr>
-          <tr>
+          <tr className={styles.days}>
           <td id={styles.d29}>23</td>
           <td id={styles.d30}>24</td>
           <td id={styles.d31}>25</td>
@@ -88,7 +88,7 @@ export default function Home() {
           <td id={styles.d34}>28</td>
           <td id={styles.d35}>29</td>
           </tr>
-          <tr>
+          <tr className={styles.days}>
           <td id={styles.d36}>30</td>
           <td id={styles.d37}>31</td>
           <td id={styles.d38}></td>
