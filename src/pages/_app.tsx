@@ -10,9 +10,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <FooterContextProvider>
         <Component {...pageProps} />
-        <Footer>
-          <div><h1>a</h1></div>
-        </Footer>
+          <Footer/>
       </FooterContextProvider>
     </>
   ) 
