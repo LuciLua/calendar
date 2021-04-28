@@ -1,3 +1,5 @@
+import { te } from 'date-fns/locale';
+import { useEffect, useRef } from 'react';
 import { useFooter } from '../../contexts/FooterContext';
 import styles from './footer.module.scss'
 
@@ -8,8 +10,10 @@ const {
     isDisplay,
 
     toggleColor,
-    isColor
+    isColor,
+    
 } = useFooter();
+
 
     return(
         
@@ -37,43 +41,42 @@ const {
           00:00 às 00:00 | Dia: 03
         </strong> <br />Curso JavaScript - Udemy</p>
     </div>
-            <div className={styles.footerFill}>
+            <div className={styles.footerFill}>        
                 <ul>
                 {!isColor 
                     ?
-                    <li>
-                            
-                            <input type="radio" name={styles.cr} id={styles.cp1} onClick={toggleColor}/>
-                            <a href="#">
-                                <img src="ico_add.svg" alt=""/>
-                                <span>Adicionar</span>
-                            </a>
-                         
-                        </li>
-                        :
-                        <li id={styles.resultado}>
-                            <input type="radio" name={styles.cr} id={styles.cp1}onClick={toggleColor}/>
-                            <a href="#">
+                    <li>   
+                        <input type="radio" name={styles.cr} id={styles.cp1} onClick={toggleColor}/>
+                        <a href="#">
                             <img src="ico_add.svg" alt=""/>
                             <span>Adicionar</span>
-                            </a>
-                        </li>
+                        </a>     
+                    </li>
+                        :
+                    <li id={styles.resultado}>
+                        <input type="radio" name={styles.cr} id={styles.cp1}onClick={toggleColor}/>
+                        <a href="#">
+                        <img src="ico_add.svg" alt=""/>
+                        <span>Adicionar</span>
+                        </a>
+                    </li>
                         }                   
-
-                    <li>
+                     <li>
                     <input type="radio" name={styles.cr} id={styles.cp1}/>
                         <a href="#">
                         <img src="ico_del.svg" alt=""/>
                         <span>Excluir</span>
                         </a>
                     </li>
+
+
                     <li>
                     <input type="radio" name={styles.cr} id={styles.cp1}/>
                         <a href="#">
                         <img src="ico_calendar.svg" alt=""/>
                         <span>Editar</span>
                         </a>
-                    </li>
+                    </li>      
                     <li id={styles.list}>
                     <input type="radio" name={styles.cr} id={styles.cp1} onClick={toggleList}/>
                         <a>
@@ -82,19 +85,12 @@ const {
                         </a>
                     </li>
                     <li>
-                    <input type="color" name={styles.cores} value="#fff" onInput={function(){
-                                let dias = document.querySelector('li').style.background;
-
-                                document.getElementById("resultado").style.background = dias['cores'].value;  
-                               return false;
-                            }
-                        }/>
+                    <input id={styles.cor} type="color" name={styles.cores}/>
                         <a href="#">
                         <img src="ico_moon.svg" alt=""/>
                         <span>Tema</span>
                         </a>
-                    </li>
-               
+                    </li>          
                 </ul>
             </div>
         </div>

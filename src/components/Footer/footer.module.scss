@@ -63,6 +63,11 @@
                     opacity: 10%;
                 }
 
+                input[type=radio]:checked{
+                    background-color: #151515;
+                    opacity: 100%;
+                }
+
                 a{
                     text-decoration: none;
                     width: 100%;
@@ -212,6 +217,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
 
     img{
         filter: invert(2);
