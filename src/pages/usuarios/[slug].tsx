@@ -30,14 +30,14 @@ export default function Usuario( {usuario}: UsuarioProps ){
         
         <body> 
         
-        <div className={styles.usuarios}>
+        {/* <div className={styles.usuarios}>
             
         <Head>
             <title> Ola | Bem Vindo</title>
         </Head>
 
             <div>
-                <Link href="/">
+                <Link href="#">
                     <button type="button">
                         <img src="/arrow-left.svg" alt="Voltar"/>
                     </button>
@@ -55,7 +55,7 @@ export default function Usuario( {usuario}: UsuarioProps ){
             </header>
 
             <div dangerouslySetInnerHTML={{__html: usuario.hobbie_principal}}/>
-        </div> 
+        </div>  */}
     </body>
     )
 }

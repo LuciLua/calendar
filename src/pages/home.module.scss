@@ -122,26 +122,64 @@
                 }
 
                 &:hover{
-                    background-color: rgb(31, 31, 31);
+                    background-color: rgb(116, 116, 116);
                     color: #fff;
                     transition: 0.2s;
                 }
-                input{
+
+                label {
+                    display: block;
+                    cursor: pointer;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 15;
+
+                    &:hover{
+                        background-color: rgb(31, 31, 31);
+                        color: #fff;
+                    }
+                }
+
+                input[type=checkbox]{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    display: block;
+                    z-index: 100;
+                    opacity: 0%;
+                    top: 0;    
+                }
+
+                input[type=checkbox]:checked{
+                    display: block;
+                    opacity: 0%;
+                    
+                }
+
+                label:before {
                     width: 100%;
                     height: 100%;
                     position: absolute;
-                    top: 0;
                     left: 0;
-                    opacity: 10%;
-
-                    &:hover{
-                        background: red;
-                    }
+                    top: 0;
+                    color: #fff;
+                    content: ' ';
                 }
-                input:checked{
-                    background-color: #2d2d2d;
-                    color: red;
-                    
+
+                input[type=checkbox]:checked + label::before {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+
+                    background-color: rgba(36, 51, 73, 0.208);
+                    color: #fff;
+                    z-index: 0;
+
                 }
             }
         }

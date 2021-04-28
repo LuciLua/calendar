@@ -1,5 +1,3 @@
-import { te } from 'date-fns/locale';
-import { useEffect, useRef } from 'react';
 import { useFooter } from '../../contexts/FooterContext';
 import styles from './footer.module.scss'
 
@@ -46,7 +44,8 @@ const {
                 {!isColor 
                     ?
                     <li>   
-                        <input type="radio" name={styles.cr} id={styles.cp1} onClick={toggleColor}/>
+                        <input type="radio" name="choice" id={styles.cp1} value="add" onClick={toggleColor}/>
+                        <label htmlFor="add"></label>
                         <a href="#">
                             <img src="ico_add.svg" alt=""/>
                             <span>Adicionar</span>
@@ -54,7 +53,8 @@ const {
                     </li>
                         :
                     <li id={styles.resultado}>
-                        <input type="radio" name={styles.cr} id={styles.cp1}onClick={toggleColor}/>
+                        <input type="radio" name="choice" value="add" id={styles.cp1}onClick={toggleColor}/>
+                        <label htmlFor="add"></label>
                         <a href="#">
                         <img src="ico_add.svg" alt=""/>
                         <span>Adicionar</span>
@@ -62,23 +62,24 @@ const {
                     </li>
                         }                   
                      <li>
-                    <input type="radio" name={styles.cr} id={styles.cp1}/>
+                    <input type="radio" name="choice" value="del" id={styles.cp1}/>
+                    <label htmlFor="del"></label>
                         <a href="#">
                         <img src="ico_del.svg" alt=""/>
                         <span>Excluir</span>
                         </a>
                     </li>
-
-
                     <li>
-                    <input type="radio" name={styles.cr} id={styles.cp1}/>
+                    <input type="radio" name="choice" value="edit" id={styles.cp1}/>
+                    <label htmlFor="edit"></label>
                         <a href="#">
                         <img src="ico_calendar.svg" alt=""/>
                         <span>Editar</span>
                         </a>
                     </li>      
                     <li id={styles.list}>
-                    <input type="radio" name={styles.cr} id={styles.cp1} onClick={toggleList}/>
+                    <input type="radio" name="choice" value="list" id={styles.cp1} onClick={toggleList}/>
+                    <label htmlFor="list"></label>
                         <a>
                         <img src="ico_list.svg" alt=""/>
                         <span>Listar</span>

@@ -1,12 +1,12 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
 
 
-type Usuario = {
-    username: string;
-    idade: string;
-    hobbie_principal: string;
-    hobbie_secundario: string;
-}
+// type Usuario = {
+//     username: string;
+//     idade: string;
+//     hobbie_principal: string;
+//     hobbie_secundario: string;
+// }
 
 type FooterContextData ={
     toggleList: () => void;
@@ -17,7 +17,7 @@ type FooterContextData ={
     isColor: boolean;
     setColorState: (state: boolean) => void;
 
-    usuarioList: Usuario[];
+    // usuarioList: Usuario[];
 
 }
 
@@ -30,7 +30,7 @@ export function FooterContextProvider({ children }: FooterContextProviderProps){
 
     const [isDisplay, setIsList] = useState(false)
     const [isColor, setIsColor] = useState(false)
-    const [usuarioList] = useState([]);
+    // const [usuarioList] = useState([]);
 
     function toggleList(){
         setIsList(!isDisplay)
@@ -58,7 +58,7 @@ export function FooterContextProvider({ children }: FooterContextProviderProps){
             isColor,
             toggleColor,
 
-            usuarioList,
+            // usuarioList,
 
         }}>
             {children}
