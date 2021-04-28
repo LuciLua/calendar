@@ -38,14 +38,14 @@ export default function Home({allUsers}: HomeProps) {
     </Head>
 
     <div className={styles.header}>
-      <span> Link: 
+      {/* <span> Link: 
         {allUsers.map((usuario)=>{
         return(
           <span><Link href={`/usuarios/${usuario.id}`}>
           <a>{usuario.username} here </a>
           </Link></span>
           )})}
-      </span>
+      </span> */}
       <span>{currentDate}<p></p> 2021</span>
     </div>
     <div className={styles.calendar}>

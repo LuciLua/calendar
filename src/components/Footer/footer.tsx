@@ -9,6 +9,8 @@ const {
 
     toggleColor,
     isColor,
+
+    usuarioList
     
 } = useFooter();
 
