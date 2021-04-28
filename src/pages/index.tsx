@@ -62,27 +62,27 @@ export default function Home({allUsers}: HomeProps) {
         </tr>
         <tr className={styles.days}>
           <td id={styles.d1}>
-            <input value="d1" type="checkbox"/>
+            <input disabled value="d1" type="checkbox"/>
             <label htmlFor="d1"></label>
           </td>
           <td id={styles.d2}>
-            <input value="d2" type="checkbox"/>
+            <input disabled value="d2" type="checkbox"/>
             <label htmlFor="d2"></label>
             </td>
           <td id={styles.d3}>
-            <input value="d3" type="checkbox"/>
+            <input disabled value="d3" type="checkbox"/>
             <label htmlFor="d3"></label>
           </td>
           <td id={styles.d4}>
-            <input value="d4" type="checkbox"/>
+            <input disabled value="d4" type="checkbox"/>
             <label htmlFor="d4"></label>
           </td>
           <td id={styles.d5}>
-            <input value="d5" type="checkbox"/>
+            <input disabled value="d5" type="checkbox"/>
             <label htmlFor="d5"></label>
           </td>
           <td id={styles.d6}>
-            <input value="d6" type="checkbox"/>
+            <input disabled value="d6" type="checkbox"/>
             <label htmlFor="d6"></label>
           </td>
           <td id={styles.d7}>1
@@ -220,23 +220,23 @@ export default function Home({allUsers}: HomeProps) {
           <label htmlFor="d37"></label>
         </td>
           <td id={styles.d38}>
-            <input value="d38" type="checkbox"/>
+            <input disabled value="d38" type="checkbox"/>
             <label htmlFor="d38"></label>
           </td>
           <td id={styles.d39}>
-            <input value="d39" type="checkbox"/>
+            <input disabled value="d39" type="checkbox"/>
             <label htmlFor="d39"></label>
           </td>
           <td id={styles.d40}>
-            <input value="d40" type="checkbox"/>
+            <input disabled value="d40" type="checkbox"/>
             <label htmlFor="d40"></label>
           </td>
           <td id={styles.d41}>
-            <input value="d41" type="checkbox"/>
+            <input disabled value="d41" type="checkbox"/>
             <label htmlFor="d41"></label>
           </td>
           <td id={styles.d42}>
-            <input value="d42" type="checkbox"/>
+            <input disabled value="d42" type="checkbox"/>
             <label htmlFor="d42"></label>
           </td>
         </tr>

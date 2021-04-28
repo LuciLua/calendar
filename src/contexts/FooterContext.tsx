@@ -33,7 +33,7 @@ export function FooterContextProvider({ children }: FooterContextProviderProps){
     const [usuarioList] = useState([]);
 
     function toggleList(){
-        setIsList(!isDisplay)
+        setIsList(!isDisplay) 
     }
 
     function setListState(state: boolean){

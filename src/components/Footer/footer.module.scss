@@ -64,7 +64,7 @@
                     opacity: 0%;
                 }
                 
-                input[type=radio]{
+                input[type=checkbox]{
                     position: absolute;
                     width: 20%;
                     height: 100%;
@@ -74,7 +74,7 @@
                     opacity: 0%;
                 }
 
-                input[type=radio]:checked{
+                input[type=checkbox]:checked{
                     background-color: #151515;
                     display: block;
                     opacity: 0%;
@@ -91,7 +91,7 @@
                     background-color:transparent;
                 }
 
-                input[type=radio]:checked + label:before {
+                input[type=checkbox]:checked + label:before {
                     color: #f3f3f3;
                     position: absolute;
                     width: 100%;
@@ -147,17 +147,14 @@
 // clica
 
 .listagemNone{
-    display: none;
-}
 
-//lista
-
-.listagem{
     position:absolute;
     width: 85vh;
     height: 70vh;
 
-    top: 10%;
+    top: -1000px;
+
+    transition: 0.4s;
 
 
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.201);
@@ -176,10 +173,10 @@
 
     h5{
         font-family: Lexend;
-        font-size: 3rem;
+        font-size: 2rem;
 
         margin-bottom: 2.5rem;
-        line-height: 7rem;
+        line-height: 4rem;
 
         border-bottom: rgb(208, 208, 208)1px solid;
 
@@ -187,7 +184,7 @@
 
     h6{
         font-family: Lexend;
-        font-size: 1.2em;
+        font-size: 1em;
         color: rgb(0, 0, 0);
         
         margin-bottom: 1rem;
@@ -202,21 +199,111 @@
         color: rgb(62, 62, 62);
 
         margin-bottom: 1.5rem;
+
+        border-bottom: 1px solid rgb(57, 57, 57);
     }
 
-    p::first-letter{
-        border-radius: 100px;
-        width: 1px;
-        height: 1px;
-        padding: 0.4px 1.5px;
-        background: rgb(255, 0, 0);
-
-        font-size: 3px;
-
-        margin-right: 0.5rem;
-
-        color: rgb(255, 0, 0);
+    .inputName{
+        border-left: #1e1e1e 4px solid;
+        border-right:none;
+        border-top:none;
+        border-bottom:none;
+        background-color: transparent;
+        height: 1.5rem;
+        padding-left: 10px;
     }
+
+    .inputTime{
+        background-color: transparent;
+        height: 1.5rem;
+        border: none;
+    }
+}
+
+//lista
+
+.listagem{
+    position:absolute;
+    width: 85vh;
+    height: 70vh;
+
+    top: 10%;
+
+    transition: 0.4s;
+
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.201);
+
+    padding: 3rem 7rem  7rem;
+
+    border-radius: 5px;
+    background: rgb(249, 249, 249);
+
+    overflow-y: scroll;
+
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    h5{
+        font-family: Lexend;
+        font-size: 2rem;
+
+        margin-bottom: 2.5rem;
+        line-height: 4rem;
+
+        border-bottom: rgb(208, 208, 208)1px solid;
+
+    }
+
+    h6{
+        font-family: Lexend;
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    p{
+        font-family: Lexend;
+        font-size: 0.8rem;
+
+        line-height: 1.4rem;
+
+        color: rgb(62, 62, 62);
+
+        margin-bottom: 1.5rem;
+
+        border-bottom: 1px solid rgb(57, 57, 57);
+    }
+
+    .inputName{
+        border-left: #1e1e1e 4px solid;
+        border-right:none;
+        border-top:none;
+        border-bottom:none;
+        background-color: transparent;
+        height: 1.5rem;
+        padding-left: 10px;
+    }
+
+    .inputTime{
+        background-color: transparent;
+        height: 1.5rem;
+        border: none;
+    }
+    .inputDate{
+        background-color: transparent;
+        height: 1.5rem;
+        border: none;
+        float: right;
+    }
+
+    span{
+        float: right;
+        margin-right: 25px;
+    }
+
 }
 
 //resposive Layout
@@ -230,9 +317,9 @@
         }
         .listagem{
             width: 100%;
-            height: 49vh;
+            height: 35vh;
             padding: 1rem;
-            margin-top: 31.5vh;
+            margin-top: 49vh;
             z-index: 0;
             border-radius: 0;
             h5{

@@ -81,7 +81,6 @@
                 cursor: default;
                 user-select: none;
 
-                height: 0.8rem;
 
                 &:nth-child(odd){
                     background-color: rgb(244, 244, 244);
@@ -97,12 +96,13 @@
             td{
                 text-align: center;
                 border-left: rgb(239, 239, 239) 1px solid;
-                width:11vh;
-                height:9vh;
+                width: 12vh;
+                height: 12vh;
                 position: relative;
 
                 font-family: Lexend, sans-serif;
                 font-weight: 500;
+
 
                 color: rgb(0, 0, 0);
                 font-size: 1.5vh;
@@ -112,6 +112,9 @@
                 transition: 0.2s;
 
                 z-index: 10;
+
+                border-top: rgb(201, 201, 201) 1px solid;
+
 
                 &:nth-child(odd){
                     background-color: rgb(244, 244, 244);
@@ -142,6 +145,7 @@
                         color: #fff;
                     }
                 }
+
 
                 input[type=checkbox]{
                     position: absolute;
@@ -179,6 +183,7 @@
                     background-color: rgba(36, 51, 73, 0.208);
                     color: #fff;
                     z-index: 0;
+                    border-bottom: #fff 1px solid;
 
                 }
             }
@@ -186,6 +191,10 @@
     }
 }
 
+#d1,#d2,#d3,#d4,#d5,#d6,#d38,#d39,#d40,#d41,#d42{
+    user-select: none;
+    pointer-events: none;
+}
 
 .listagem{
     position: absolute;
@@ -267,8 +276,8 @@
         table{
             tr{
                 td{
-                height: 7vh;
-                width: 100vh;
+                    width: 12vh;
+                    height: 12vh;
                 }
             }
         }
@@ -285,8 +294,8 @@
         table{
             tr{
                 td{
-                height: 6vh;
-                width: 100vh;
+                    width: 12vh;
+                    height: 12vh;
                 }
             }
         }
@@ -296,15 +305,17 @@
 
 @media only screen and (max-width: 420px) {
     .calendar{
-        top: 0;
+        top: 5vh;
         left: 0;
         margin: 0;
         position: absolute;
+        width: 100%;
+        overflow: hidden;
         table{
             tr{
                 td{
-                height: 5vh;
-                width: 100vh;
+                    width: 8vh;
+                    height: 8vh;
                 }
             }
         }
@@ -320,8 +331,8 @@
         table{
             tr{
                 td{
-                height: 5vh;
-                width: 100vh;
+                    width: 12vh;
+                    height: 12vh;
                 }
             }
         }

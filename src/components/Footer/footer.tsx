@@ -21,75 +21,123 @@ const {
              <div className={!isDisplay ? styles.listagemNone : styles.listagem}>
       <h5>Listagem</h5>
       <h6>Maio</h6>
-      <p>o<strong>
-          00:00 às 00:00 | Dia: 03
-        </strong> <br />Curso JavaScript - Udemy</p>
-        <p>o<strong>
-          00:00 às 00:00 | Dia: 03
-        </strong> <br />Curso JavaScript - Udemy</p>
-        <p>o<strong>
-          00:00 às 00:00 | Dia: 03
-        </strong> <br />Curso JavaScript - Udemy</p>
+      <input placeholder={'Atividade'} type="text" className={styles.inputName}/>
+      <p>
+         <input type="time" className={styles.inputTime} /> 
+         Até
+         <input type="time" className={styles.inputTime}/>
+          <input type="date" className={styles.inputDate}/>
+          <span>Até</span>
+          <input type="date" className={styles.inputDate}/>
+
+      </p>
+          
+
+      <input placeholder={'Atividade'} type="text" className={styles.inputName}/>
+      <p>
+         <input type="time" className={styles.inputTime} /> 
+         Até
+         <input type="time" className={styles.inputTime}/>
+          <input type="date" className={styles.inputDate}/>
+          <span>Até</span>
+          <input type="date" className={styles.inputDate}/>
+
+      </p>
+
+      <input placeholder={'Atividade'} type="text" className={styles.inputName}/>
+      <p>
+         <input type="time" className={styles.inputTime} /> 
+         Até
+         <input type="time" className={styles.inputTime}/>
+          <input type="date" className={styles.inputDate}/>
+          <span>Até</span>
+          <input type="date" className={styles.inputDate}/>
+
+      </p>
+
       <h6>Junho</h6>
-      <p>o<strong>
-          00:00 às 00:00 | Dia: 03
-        </strong> <br />Curso JavaScript - Udemy</p>
-        <p>o<strong>
-          00:00 às 00:00 | Dia: 03
-        </strong> <br />Curso JavaScript - Udemy</p>
-        <p>o<strong>
-          00:00 às 00:00 | Dia: 03
-        </strong> <br />Curso JavaScript - Udemy</p>
+      <input placeholder={'Atividade'} type="text" className={styles.inputName}/>
+      <p>
+         <input type="time" className={styles.inputTime} /> 
+         Até
+         <input type="time" className={styles.inputTime}/>
+          <input type="date" className={styles.inputDate}/>
+          <span>Até</span>
+          <input type="date" className={styles.inputDate}/>
+
+      </p>
+
+      <input placeholder={'Atividade'} type="text" className={styles.inputName}/>
+      <p>
+         <input type="time" className={styles.inputTime} /> 
+         Até
+         <input type="time" className={styles.inputTime}/>
+          <input type="date" className={styles.inputDate}/>
+          <span>Até</span>
+          <input type="date" className={styles.inputDate}/>
+
+      </p>
+
+      <input placeholder={'Atividade'} type="text" className={styles.inputName}/>
+      <p>
+         <input type="time" className={styles.inputTime} /> 
+         Até
+         <input type="time" className={styles.inputTime}/>
+          <input type="date" className={styles.inputDate}/>
+          <span>Até</span>
+          <input type="date" className={styles.inputDate}/>
+
+      </p>
     </div>
             <div className={styles.footerFill}>        
                 <ul>
                 {!isColor 
                     ?
                     <li>   
-                        <input type="radio" name="choice" id={styles.cp1} value="add" onClick={toggleColor}/>
+                        <input type="checkbox" name="choice" id={styles.cp1} value="add" onClick={toggleColor}/>
                         <label htmlFor="add"></label>
-                        <a href="#">
+                        <a href="https://wwww.google.com">
                             <img src="ico_add.svg" alt=""/>
                             <span>Adicionar</span>
                         </a>     
                     </li>
                         :
                     <li id={styles.resultado}>
-                        <input type="radio" name="choice" value="add" id={styles.cp1}onClick={toggleColor}/>
+                        <input type="checkbox" name="choice" value="add" id={styles.cp1}onClick={toggleColor}/>
                         <label htmlFor="add"></label>
-                        <a href="#">
+                        <a href="https://wwww.google.com">
                         <img src="ico_add.svg" alt=""/>
                         <span>Adicionar</span>
                         </a>
                     </li>
                         }                   
                      <li>
-                    <input type="radio" name="choice" value="del" id={styles.cp1}/>
+                    <input type="checkbox" name="choice" value="del" id={styles.cp1}/>
                     <label htmlFor="del"></label>
-                        <a href="#">
+                    <a href="https://wwww.google.com">
                         <img src="ico_del.svg" alt=""/>
                         <span>Excluir</span>
                         </a>
                     </li>
                     <li>
-                    <input type="radio" name="choice" value="edit" id={styles.cp1}/>
+                    <input type="checkbox" name="choice" value="edit" id={styles.cp1}/>
                     <label htmlFor="edit"></label>
-                        <a href="#">
+                        <a href="index.tsx">
                         <img src="ico_calendar.svg" alt=""/>
                         <span>Editar</span>
                         </a>
                     </li>      
                     <li id={styles.list}>
-                    <input type="radio" name="choice" value="list" id={styles.cp1} onClick={toggleList}/>
+                    <input type="checkbox" name="choice" value="list" id={styles.cp1} onClick={toggleList}/>
                     <label htmlFor="list"></label>
-                        <a>
+                    <a href="https://wwww.google.com">
                         <img src="ico_list.svg" alt=""/>
                         <span>Listar</span>
                         </a>
                     </li>
                     <li>
                     <input id={styles.cor} type="color" name={styles.cores}/>
-                        <a href="#">
+                        <a href="https://wwww.google.com">
                         <img src="ico_moon.svg" alt=""/>
                         <span>Tema</span>
                         </a>
