@@ -1,14 +1,13 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { api } from '../../services/api';
 
-import Link from 'next/link';
-
 import styles from './usuario.module.scss'
 
 
 import { useFooter } from '../../contexts/FooterContext';
 
 import Head from 'next/head';
+
 
 type Usuario = {
     id: string;
@@ -21,8 +20,6 @@ type Usuario = {
 type UsuarioProps = {
     usuario: Usuario;
 };
-
-
 
 export default function Usuario( {usuario}: UsuarioProps ){
 
@@ -64,8 +61,6 @@ export default function Usuario( {usuario}: UsuarioProps ){
    
     )
 }
-
-
 export const getStaticProps: GetStaticProps = async (ctx) => {
     
     const { slug } = ctx.params;
@@ -108,4 +103,3 @@ export const getStaticPaths: GetStaticPaths = async () =>{
 
     //dentro oo next, fallback blocking/true se chama: incremental static regeneration
 }
-

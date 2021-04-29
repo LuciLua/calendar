@@ -1,6 +1,4 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
-import { UserContext } from './UserContext';
-
 
 type Usuario = {
     username: string;
@@ -69,8 +67,4 @@ export function FooterContextProvider({ children }: FooterContextProviderProps){
 
 export const useFooter = () => {
     return useContext(FooterContext);
-}
-
-export const useUser = () => {
-    return useContext(UserContext);
 }

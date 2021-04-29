@@ -1,7 +1,5 @@
-import Link from 'next/link';
 import { useFooter } from '../../contexts/FooterContext';
 import styles from './footer.module.scss'
-import Image from 'next/image'
 
 
 export function Footer(){
@@ -99,8 +97,8 @@ const {
                     <li>   
                         <input type="checkbox" name="choice" id={styles.cp1} value="add" onClick={toggleColor}/>
                         <label htmlFor="add"></label>
-                        <a href="https://wwww.google.com">
-                            <img src="ico_add.svg" alt=""/>
+                        <a>
+                            <img src="/ico_add.svg" alt=""/>
                             <span>Adicionar</span>
                         </a>     
                     </li>
@@ -108,8 +106,8 @@ const {
                     <li id={styles.resultado}>
                         <input type="checkbox" name="choice" value="add" id={styles.cp1}onClick={toggleColor}/>
                         <label htmlFor="add"></label>
-                        <a href="https://wwww.google.com">
-                        <img src="ico_add.svg" alt=""/>
+                        <a>
+                        <img src="/ico_add.svg" alt=""/>
                         <span>Adicionar</span>
                         </a>
                     </li>
@@ -117,8 +115,8 @@ const {
                      <li>
                     <input type="checkbox" name="choice" value="del" id={styles.cp1}/>
                     <label htmlFor="del"></label>
-                    <a href="https://wwww.google.com">
-                        <img src="ico_del.svg" alt=""/>
+                    <a>
+                        <img src="/ico_del.svg" alt=""/>
                         <span>Excluir</span>
                         </a>
                     </li>
@@ -126,22 +124,22 @@ const {
                     <input type="checkbox" name="choice" value="edit" id={styles.cp1}/>
                     <label htmlFor="edit"></label>
                         <a href="/usuarios/1">
-                        <img src="ico_calendar.svg" alt=""/>
+                        <img src="/ico_calendar.svg" alt=""/>
                         <span>Editar</span>
                         </a>
                     </li>      
                     <li id={styles.list}>
                     <input type="checkbox" name="choice" value="list" id={styles.cp1} onClick={toggleList}/>
                     <label htmlFor="list"></label>
-                    <a href="https://wwww.google.com">
-                        <img src="ico_list.svg"/>
+                    <a>
+                        <img src="/ico_list.svg"/>
                         <span>Listar</span>
                         </a>
                     </li>
                     <li>
                     <input id={styles.cor} type="color" name={styles.cores}/>
-                        <a href="https://wwww.google.com">
-                        <img src="ico_moon.svg" alt=""/>
+                        <a>
+                        <img src="/ico_moon.svg" alt=""/>
                         <span>Tema</span>
                         </a>
                     </li>          
