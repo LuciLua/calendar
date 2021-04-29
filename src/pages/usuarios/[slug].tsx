@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import styles from './usuario.module.scss'
 
+
 import { useFooter } from '../../contexts/FooterContext';
 
 import Head from 'next/head';
@@ -32,16 +33,30 @@ export default function Usuario( {usuario}: UsuarioProps ){
     <div>
         <div className={styles.main}>
             <h1>
-                Hello, {Math.PI}
+                Hello, {usuario.username}
             </h1>
             
         <p>
-            {usuario.username}
+           Age: {usuario.idade}
+           <br/>
+           Habbies: {usuario.hobbie_secundario} e {usuario.hobbie_principal}
+           
+                 <br/>
+                 <br/>
+        Outros usuários: <br/>
+        <a href="/usuarios/1">Luci</a><br/>
+        <a href="/usuarios/2">João</a><br/>
+        <a href="/usuarios/3">Roberta</a><br/>
+        <a href="/usuarios/4">Sara</a><br/>
+        <a href="/usuarios/5">John</a><br/>
+        <a href="/usuarios/6">Jane</a><br/>
         </p>
+
+  
         </div>
         
         <Head>
-            <title> Ola | Bem Vindo</title>
+            <title> Ola {usuario.username} -  Bem-Vindo</title>
         </Head>  
     
 
@@ -94,46 +109,3 @@ export const getStaticPaths: GetStaticPaths = async () =>{
     //dentro oo next, fallback blocking/true se chama: incremental static regeneration
 }
 
-
-// export const getStaticPaths: GetStaticPaths = async () =>{
-    //     const { data } = await api.get('usuario',{
-        //         params:{}})
-        
-        //       const paths = data.map(usuario => {
-            //           return {
-                //               params: {
-                    //                   slug: usuario.id
-                    //               }
-                    //           }
-                    //       })
-                    
-//     return{
-//         paths,
-//         fallback: 'blocking'
-//     }
-
-//     //dentro oo next, fallback blocking/true se chama: incremental static regeneration
-
-// }
-
-// export const getStaticProps: GetStaticProps = async (ctx) => {
-
-//     const { slug } = ctx.params;
-    
-//     const { data } = await api.get(`/usuarios/${slug}`)
-
-//     const usuario = {
-//     id: data.id,
-//     username: data.username,
-//     idade: data.idade,
-//     hobbie_principal: data.hobbie_principal,
-//     hobbie_secundario: data.hobbie_secundario,
-//   };
-    
-//     return{
-//         props: {
-//             usuario,
-//         },
-//         revalidate: 60 * 60 * 24, //24 hours
-//     }
-// }

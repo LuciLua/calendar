@@ -10,6 +10,16 @@
             color: #fff;
             font-size: 2rem;
         }
+    a{
+        text-decoration: none;
+        color: rgb(0, 229, 255);
+        text-shadow: 0 1px 10px  rgb(0, 229, 255);
+
+        &:hover{
+            color: rgb(255, 47, 0);
+            text-shadow: 0 1px 10px  rgb(255, 47, 0);
+        }
+    }
 
 }    
 

@@ -1,4 +1,5 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
+import { UserContext } from './UserContext';
 
 
 type Usuario = {
@@ -18,8 +19,8 @@ type FooterContextData ={
     setColorState: (state: boolean) => void;
 
     usuarioList: Usuario[];
-
 }
+
 
 type FooterContextProviderProps = {
     children: ReactNode;
@@ -68,4 +69,8 @@ export function FooterContextProvider({ children }: FooterContextProviderProps){
 
 export const useFooter = () => {
     return useContext(FooterContext);
+}
+
+export const useUser = () => {
+    return useContext(UserContext);
 }

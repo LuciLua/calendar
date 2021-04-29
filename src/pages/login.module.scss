@@ -1,0 +1,51 @@
+.login{
+    background-color: #fff;
+    padding: 2.5rem 3.5rem;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2{
+        font-family: Lexend;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        align-self: center;
+    }
+
+    label{
+        font-family: Lexend;
+        font-size: 0.8rem;
+    }
+
+    input:last-of-type{
+        margin-bottom: 2rem;
+    }
+
+
+    button{
+        border: none;
+        background-color: rgb(69, 69, 69);
+        border-radius: 5px;
+        color: #fff;
+        font-family: Lexend;
+        font-family: 2rem;
+        width: 8rem;
+        height: 2rem;
+        align-self: center;
+        margin-bottom: 0.8rem;
+    }
+    button:last-of-type{
+        border: none;
+        background-color: rgb(1, 145, 255);
+        border-radius: 5px;
+        color: #fff;
+        font-family: Lexend;
+        font-family: 2rem;
+        width: 8rem;
+        height: 2rem;
+        align-self: center;
+        margin-bottom: 0;
+    }
+}

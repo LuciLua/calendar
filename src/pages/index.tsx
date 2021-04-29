@@ -5,7 +5,6 @@ import React from 'react';
 import { GetStaticProps } from 'next';
 import format from 'date-fns/format';
 import ptBR from 'date-fns/locale/pt-BR';
-import { id } from 'date-fns/locale';
 import Link from 'next/link';
 
 
@@ -38,15 +37,10 @@ export default function Home({allUsers}: HomeProps) {
     </Head>
 
     <div className={styles.header}>
-      {/* <span> Link: 
-        {allUsers.map((usuario)=>{
-        return(
-          <span><Link href={`/usuarios/${usuario.id}`}>
-          <a>{usuario.username} here </a>
-          </Link></span>
-          )})}
-      </span> */}
       <span>{currentDate}<p></p> 2021</span>
+      <Link href="/login">
+          <button type="submit">Login</button>
+        </Link>
     </div>
     <div className={styles.calendar}>
       <table>

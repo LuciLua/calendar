@@ -1,5 +1,8 @@
+import Link from 'next/link';
 import { useFooter } from '../../contexts/FooterContext';
 import styles from './footer.module.scss'
+import Image from 'next/image'
+
 
 export function Footer(){
     
@@ -89,7 +92,7 @@ const {
 
       </p>
     </div>
-            <div className={styles.footerFill}>        
+            <div className={styles.footerFill}>  
                 <ul>
                 {!isColor 
                     ?
@@ -122,7 +125,7 @@ const {
                     <li>
                     <input type="checkbox" name="choice" value="edit" id={styles.cp1}/>
                     <label htmlFor="edit"></label>
-                        <a href="index.tsx">
+                        <a href="/usuarios/1">
                         <img src="ico_calendar.svg" alt=""/>
                         <span>Editar</span>
                         </a>
@@ -131,7 +134,7 @@ const {
                     <input type="checkbox" name="choice" value="list" id={styles.cp1} onClick={toggleList}/>
                     <label htmlFor="list"></label>
                     <a href="https://wwww.google.com">
-                        <img src="ico_list.svg" alt=""/>
+                        <img src="ico_list.svg"/>
                         <span>Listar</span>
                         </a>
                     </li>
